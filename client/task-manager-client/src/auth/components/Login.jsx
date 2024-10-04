@@ -2,11 +2,11 @@
 
 //components
 import "boxicons";
+
 //styles
 
 // eslint-disable-next-line react/prop-types
 function Login({ setclassNameUsed }) {
-  
   const handleClickAdd = () => {
     setclassNameUsed("active");
     console.log("active");
