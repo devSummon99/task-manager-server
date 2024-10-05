@@ -1,28 +1,27 @@
+/* eslint-disable react/no-unknown-property */
 //libs
 
 //components
 
 //styles
+import "./change.css";
 
 function ChangePassword() {
   return (
-    <section className="change-password">
-      <div className="first-container">
-        <p>Enter a new password</p>
-        <form>
-          <input type="password" placeholder="A new password" required />
-        </form>
-      </div>
-      <div className="second-container">
-        <p>Enter the new password again</p>
-        <form>
-          <input type="password" placeholder="Same password" required />
-        </form>
-      </div>
-      <button type="submit" className="btn">
-        Send
-      </button>
-    </section>
+    <div className="container">
+    <h2>Change Password</h2>
+    <form>
+        <div className="form-group">
+            <label for="new-password">New password</label>
+            <input type="password" id="new-password" name="new-password"/>
+        </div>
+        <div className="form-group">
+            <label for="confirm-password">Confirm new password</label>
+            <input type="password" id="confirm-password" name="confirm-password"/>
+        </div>
+        <button type="submit" className="btn">Submit</button>
+    </form>
+</div>
   );
 }
 

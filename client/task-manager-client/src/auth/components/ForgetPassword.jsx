@@ -1,32 +1,24 @@
+import "./forget.css";
+
 function ForgetPassword() {
   return (
-    <div className="recovery-pass-container">
-      <section className="recovery-email-section">
-        <div className="text-email-container">
-          <p>
-            Enter a valid email to reset your password. A verification code will
-            be sent to you.
-          </p>
+    <div className="container">
+      <section className="section-container">
+        <h1>Reset your password</h1>
+        <p>
+          Enter your email address below and we will send you a link to reset
+          your password.
+        </p>
+        <div className="input-group">
+          <input type="email" placeholder="Email Address" />
+          <i className="fa fa-envelope"></i>
         </div>
-        <form>
-          <input type="email" placeholder="Email address" required />
-          <button type="submit" className="btn">
-            Send
-          </button>
-        </form>
-      </section>
-      <section className="recovery-token-section">
-      <div className="text-token-container">
-          <p>
-          Enter the verification code correctly
-          </p>
-        </div>
-        <form>
-          <input type="number" placeholder="A verification code" required />
-          <button type="submit" className="btn">
-            Send
-          </button>
-          </form>
+        <a href="#" className="btn">
+          Send
+        </a>
+        <a href="#" className="login-link">
+          Log in
+        </a>
       </section>
     </div>
   );
