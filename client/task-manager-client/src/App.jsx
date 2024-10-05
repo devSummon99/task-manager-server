@@ -1,7 +1,7 @@
 //libs
 import { } from 'react';
 //components
-import Auth from './auth/components/Auth';
+//import Auth from './session-manager/auth/components/Auth';
 //styles
 import './App.css';
 
@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      <Auth></Auth>
     </>
   )
 }

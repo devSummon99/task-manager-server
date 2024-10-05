@@ -4,11 +4,8 @@
 import "boxicons";
 //import Register from "./Register";
 //import Login from "./Login";
-//import ForgetPassword from "./ForgetPassword";
-import ChangePassword from "./ChangePassword";
-//import OTPvalue from "./OTPvalue";
 //styles
-//import "./auth.css";
+import "./auth.css";
 
 
 
@@ -20,7 +17,7 @@ function Auth() {
 
   return (
  <>
-  <ChangePassword />
+
  </>
   
     
