@@ -1,26 +1,33 @@
-import "./forget.css";
+/* eslint-disable react/prop-types */
+//libs
 
-function ForgetPassword() {
+//components
+
+//styles
+
+function ForgetPassword({setModifyClassName}) {
+
+  const handleSumbitButton = () => {
+    setModifyClassName('active')
+    }
+  
+    const handleSumbitTop = () => {
+      setModifyClassName('')
+    }
   return (
-    <div className="container">
-      <section className="section-container">
-        <h1>Reset your password</h1>
-        <p>
-          Enter your email address below and we will send you a link to reset
-          your password.
-        </p>
-        <div className="input-group">
-          <input type="email" placeholder="Email Address" />
-          <i className="fa fa-envelope"></i>
-        </div>
-        <a href="#" className="btn">
-          Send
-        </a>
-        <a href="#" className="login-link">
-          Log in
-        </a>
-      </section>
-    </div>
+    <div className="container-forgot-password">
+    <header onClick={handleSumbitTop}>Reset your password</header>
+
+    <form>
+    <p>
+      Enter your email address below and we will send you a link to reset
+      your password.
+    </p>
+      <input type="email" placeholder="Email address" />
+      <button onClick={handleSumbitButton}>Send</button>
+      <a href="#">Log in</a>
+    </form>
+  </div>
   );
 }
 

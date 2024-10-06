@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #d0c7f6;
-    font-family: Arial, sans-serif;
+    background-color:  #f0f0f0;
+    font-family: 'Poppins', sans-serif;
 }
 .container {
     background-color: white;
@@ -38,7 +40,7 @@ body {
     border-radius: 5px;
 }
 .verify-button {
-    background-color: #007bff;
+    background-color: #303f9f;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -47,7 +49,7 @@ body {
     cursor: pointer;
 }
 .verify-button:hover {
-    background-color: #0056b3;
+    background-color: #007bff;
 }
 .resend-link {
     display: block;
