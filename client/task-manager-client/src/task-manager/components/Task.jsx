@@ -3,7 +3,7 @@
 //components
 
 //styles
-import './task.css';
+import './task.css'
 
 function Task() {
   return (
