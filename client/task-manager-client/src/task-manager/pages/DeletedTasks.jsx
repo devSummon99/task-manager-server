@@ -1,7 +1,5 @@
-
-export default function DeletedTasks() {
-  return (
-    <h1>Deleted Tasks</h1>
-  )
+function DeletedTasks() {
+  return <h1>Deleted Tasks</h1>;
 }
 
+export default DeletedTasks;

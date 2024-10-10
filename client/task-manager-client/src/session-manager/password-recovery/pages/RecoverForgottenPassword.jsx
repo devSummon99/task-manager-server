@@ -1,9 +1,7 @@
 import PasswordRecovery from "../components/PasswordRecovery";
 
 function RecoverForgottenPassword() {
-  return (
-   <PasswordRecovery/>
-  )
+  return <PasswordRecovery />;
 }
 
 export default RecoverForgottenPassword;

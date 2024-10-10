@@ -61,7 +61,7 @@ export const HamburgetMenuClose = (props) => (
 );
 
 const Task = () => {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   return (
@@ -123,11 +123,10 @@ const Task = () => {
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
-            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
 
             {click ? (
               <span className="icon">
-                <HamburgetMenuClose />{" "}
+                <HamburgetMenuClose />
               </span>
             ) : (
               <span className="icon">
