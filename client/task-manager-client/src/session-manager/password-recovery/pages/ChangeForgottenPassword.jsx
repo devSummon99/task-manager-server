@@ -1,9 +1,9 @@
-
+import ChangePassword from "../components/ChangePassword";
 
 function ChangeForgottenPassword() {
   return (
-    <div>ChangeForgottenPassword</div>
+  <ChangePassword/>
   )
 }
 
-export default ChangeForgottenPassword
+export default ChangeForgottenPassword;

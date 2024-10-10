@@ -1,8 +1,9 @@
+import PasswordRecovery from "../components/PasswordRecovery";
 
 function RecoverForgottenPassword() {
   return (
-    <div>RecoverForgottenPassword</div>
+   <PasswordRecovery/>
   )
 }
 
-export default RecoverForgottenPassword
+export default RecoverForgottenPassword;
