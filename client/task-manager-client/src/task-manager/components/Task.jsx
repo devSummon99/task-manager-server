@@ -61,7 +61,7 @@ export const HamburgetMenuClose = (props) => (
 );
 
 const Task = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
 
   const handleClick = () => setClick(!click);
   return (
@@ -69,7 +69,7 @@ const Task = () => {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            <span>CodeBucks</span>
+            <span>Task</span>
             {/* <i className="fas fa-code"></i> */}
             <span className="icon">
               <CodeIcon />
@@ -85,40 +85,40 @@ const Task = () => {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Home
+                All Tasks
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/completed"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                About
+                Completed Tasks
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/pending"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
+                Pending Tasks
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/deleted"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Contact Us
+                Deleted Tasks
               </NavLink>
             </li>
           </ul>
@@ -127,11 +127,11 @@ const Task = () => {
 
             {click ? (
               <span className="icon">
-                <HamburgetMenuOpen />{" "}
+                <HamburgetMenuClose />{" "}
               </span>
             ) : (
               <span className="icon">
-                <HamburgetMenuClose />
+                <HamburgetMenuOpen />
               </span>
             )}
           </div>
