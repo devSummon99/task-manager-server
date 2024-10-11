@@ -1,13 +1,17 @@
 //libs
 
+import NavBar from "./NavBar";
+
 //components
 
 //styles
 
 function Header() {
-    return (
-      <div>Header</div>
-    )
-  }
-  
-  export default Header;
+  return (
+    <header>
+      <NavBar />
+    </header>
+  );
+}
+
+export default Header;

@@ -2,8 +2,8 @@
 import { useState } from "react";
 //components
 import "boxicons";
-import Register from "./Register";
-import Login from "./Login";
+import Register from "../components/Register";
+import Login from "../components/Login";
 //styles
 import "./auth.css";
 
