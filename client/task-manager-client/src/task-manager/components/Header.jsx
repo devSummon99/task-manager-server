@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 //components
 
 //styles
+import "./task.css"
 
 function Header() {
   return (
