@@ -2,8 +2,15 @@
 
 function PendingTasks() {
   return (
-    <h1>Pending Tasks</h1>
-  )
+    <>
+
+      <h1>Pending Tasks</h1>
+    </>
+  );
 }
 
-export default PendingTasks
+export default PendingTasks;
+/**
+ *      <Header />
+ * import Header from "../components/Header";
+ */

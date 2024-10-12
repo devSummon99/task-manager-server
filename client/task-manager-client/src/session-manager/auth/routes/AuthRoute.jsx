@@ -1,12 +1,14 @@
-import { Route } from "react-router-dom";
-import Auth from "../pages/Auth";
+import { Route, Routes, } from "react-router-dom";
+import Auth from "../auth/pages/Auth";
 
 function AuthRoute() {
   return (
- 
-    <Route path="/auth" element={<Auth />} />
-
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<Auth />} />
+      </Routes>
+    </>
+  );
 }
 
 export default AuthRoute;

@@ -49,7 +49,7 @@ function OTPvalue() {
             placeholder="6"
           />
         </div>
-        <button className="verify-button">Verify</button>
+        <button type="button" className="verify-button">Verify</button>
       </form>
 
       <p>

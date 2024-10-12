@@ -5,6 +5,7 @@
 
 //styles
 
+
 function ForgetPassword({setModifyClassName}) {
 
   const handleSumbitButton = () => {
@@ -24,7 +25,7 @@ function ForgetPassword({setModifyClassName}) {
       your password.
     </p>
       <input type="email" placeholder="Email address" />
-      <button onClick={handleSumbitButton}>Send</button>
+      <button type="button" onClick={handleSumbitButton}>Send</button>
       <a href="#">Log in</a>
     </form>
   </div>

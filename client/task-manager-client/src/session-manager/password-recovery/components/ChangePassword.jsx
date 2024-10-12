@@ -8,7 +8,7 @@ import "./change.css";
 
 function ChangePassword() {
   return (
-    <div className="container">
+    <div className="container-box">
     <h2>Change Password</h2>
     <form>
         <div className="form-group">

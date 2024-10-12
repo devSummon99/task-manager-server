@@ -92,7 +92,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/completed"
+                to="/tasks/completed"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -103,7 +103,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/pending"
+                to="/tasks/pending"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -114,7 +114,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/deleted"
+                to="/tasks/deleted"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}

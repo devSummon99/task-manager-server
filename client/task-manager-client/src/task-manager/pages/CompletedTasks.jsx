@@ -1,5 +1,15 @@
-function CompletedTasks() {
-  return <h1>Completed Tasks</h1>;
+
+function CompetedTasks() {
+  return (
+    <>
+ 
+      <h1>Competed Tasks</h1>
+    </>
+  );
 }
 
-export default CompletedTasks;
+export default CompetedTasks;
+/**
+ *      <Header />
+ * import Header from "../components/Header";
+ */

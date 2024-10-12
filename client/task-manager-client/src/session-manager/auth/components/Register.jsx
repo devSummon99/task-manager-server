@@ -9,7 +9,7 @@ function Register({ setclassNameUsed}) {
 
   const handleClickRemove = () => {
     setclassNameUsed('')
-    console.log(' not active')
+    console.log('not active')
     }
     
 
