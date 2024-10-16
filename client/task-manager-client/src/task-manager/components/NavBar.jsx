@@ -75,7 +75,7 @@ function NavBar() {
             <CodeIcon />
           </span>
         </NavLink>
-
+       
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <NavLink
@@ -112,6 +112,16 @@ function NavBar() {
           </li>
           <li className="nav-item">
            <OptionUserPanel />
+           <NavLink
+              exact
+              to="/tasks/deleted"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+              id="logout"
+            >
+              Log Out
+            </NavLink>
           </li>
         </ul>
 

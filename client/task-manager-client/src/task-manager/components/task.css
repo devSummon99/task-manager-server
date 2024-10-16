@@ -141,6 +141,11 @@
   font-size: 16px;
 }
 
+#logout {
+  display: none;
+}
+
+
 @media screen and (max-width: 960px) {
   .nav-menu {
     display: flex;
@@ -187,4 +192,11 @@
     cursor: pointer;
     color: #eeede8;
   }
+  .navbar .dropdown {
+    display: none;
+  }
+  #logout {
+    display: block;
+  }
+  
 }
