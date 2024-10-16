@@ -60,78 +60,75 @@ export const HamburgetMenuClose = (props) => (
 
 //styles
 
-
 function NavBar() {
-
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
 
-    return (
-      <nav className="navbar">
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            <span>Task</span>
-            {/* <i className="fas fa-code"></i> */}
+  return (
+    <nav className="navbar">
+      <div className="nav-container">
+        <NavLink exact to="/" className="nav-logo">
+          <span>Task</span>
+          {/* <i className="fas fa-code"></i> */}
+          <span className="icon">
+            <CodeIcon />
+          </span>
+        </NavLink>
+
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/tasks/completed"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Completed Tasks
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/tasks/pending"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Pending Tasks
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              exact
+              to="/tasks/deleted"
+              activeClassName="active"
+              className="nav-links"
+              onClick={handleClick}
+            >
+              Deleted Tasks
+            </NavLink>
+          </li>
+          <li className="nav-item">
+           <OptionUserPanel />
+          </li>
+        </ul>
+
+        <div className="nav-icon" onClick={handleClick}>
+          {click ? (
             <span className="icon">
-              <CodeIcon />
+              <HamburgetMenuClose />
             </span>
-          </NavLink>
-
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-             
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/tasks/completed"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Completed Tasks
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/tasks/pending"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Pending Tasks
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/tasks/deleted"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Deleted Tasks
-              </NavLink>
-            </li>
-          </ul>
-          <OptionUserPanel/>
-          <div className="nav-icon" onClick={handleClick}>
-
-            {click ? (
-              <span className="icon">
-                <HamburgetMenuClose />
-              </span>
-            ) : (
-              <span className="icon">
-                <HamburgetMenuOpen />
-              </span>
-            )}
-          </div>
+          ) : (
+            <span className="icon">
+              <HamburgetMenuOpen />
+            </span>
+          )}
         </div>
-      </nav>
-    )
-  }
-  
-  export default NavBar
+      </div>
+    </nav>
+  );
+}
+
+export default NavBar;
