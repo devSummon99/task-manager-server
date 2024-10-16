@@ -80,15 +80,7 @@ function NavBar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                All Tasks
-              </NavLink>
+             
             </li>
             <li className="nav-item">
               <NavLink
