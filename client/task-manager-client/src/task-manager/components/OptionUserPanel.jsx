@@ -6,7 +6,26 @@
 
 function OptionUserPanel() {
     return (
-      <div>OptionUserPanel</div>
+      <div className="dropdown">
+      <img alt="User profile picture" height="40" src="user.jpg" width="40"/>
+      <div className="dropdown-content">
+       <a href="#">
+        <i className="fas fa-user">
+        </i>
+        Account
+       </a>
+       <a href="#">
+        <i className="fas fa-cog">
+        </i>
+        Settings
+       </a>
+       <a href="#">
+        <i className="fas fa-sign-out-alt">
+        </i>
+        Log Out
+       </a>
+      </div>
+     </div>
     )
   }
   

@@ -1,6 +1,7 @@
 //libs
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import OptionUserPanel from "./OptionUserPanel";
 //components
 export const CodeIcon = (props) => (
   <svg
@@ -123,6 +124,7 @@ function NavBar() {
               </NavLink>
             </li>
           </ul>
+          <OptionUserPanel/>
           <div className="nav-icon" onClick={handleClick}>
 
             {click ? (
