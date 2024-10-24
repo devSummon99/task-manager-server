@@ -11,7 +11,9 @@ app.use(cors( {
     origin: []
 }))
 
-app.use("/api-tasks/v1/", tasksRoutes);
+app.get("/api-tasks/v1/", (req,res) => {
+res.send("<h1>Hello Tasks</h1>")
+});
 
 
 
