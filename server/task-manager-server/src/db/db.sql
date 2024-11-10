@@ -1,7 +1,7 @@
 -- Active: 1727468381190@@127.0.0.1@5433@tasks
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
+    username VARCHAR(255),
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
