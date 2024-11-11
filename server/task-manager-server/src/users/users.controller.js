@@ -12,7 +12,7 @@ export const getUsers = async (req, res) => {
 
 export const getUserByID = async (req, res) => {
     const id = parseInt(req.params.id);
-    const { rows } = await connect.query(`SELECT * FROM users WHERE id = ${id}`);
+    const { rows } = await connect.query(`SELECT * FROM users WHERE id = $1`, [id]);
     return rows
         ? res.status(200).json(rows)
         : res.status(404).json({ message: "El usuario buscado no existe" }) && console.log("ERROR en obtener todos un usuario");
@@ -40,7 +40,7 @@ export const updateUserByID = async (req, res) => {
 
 export const deleteUserByID = async (req, res) => {
     const id = parseInt(req.params.id);
-    const { rows } = await connect.query(`SELECT * FROM users WHERE id = ${id}`);
+    const { rows } = await connect.query(`SELECT * FROM users WHERE id = $1`,[id]);
     return rows
         ? (await connect.query(`DELETE FROM users WHERE id = $1`,[id])
         ) && res.status(201).json({ message: "El usuario se ha eliminado correctamente" })
