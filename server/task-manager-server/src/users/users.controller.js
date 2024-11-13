@@ -7,7 +7,7 @@ export const getUsers = async (req, res) => {
     const { rows } = await connect.query("SELECT * FROM users");
     return rows.length > 0
         ? res.status(200).json(rows)
-        : res.status(404).json({ message: "No existe ningun usuario" }) && console.log("ERROR en obtener todos los usuarios");
+        : res.status(404).json({ message: "No existe ningun usuario" });
 }
 
 export const getUserByID = async (req, res) => {
@@ -15,7 +15,7 @@ export const getUserByID = async (req, res) => {
     const { rows } = await connect.query(`SELECT * FROM users WHERE id = $1`, [id]);
     return rows
         ? res.status(200).json(rows)
-        : res.status(404).json({ message: "El usuario buscado no existe" }) && console.log("ERROR en obtener todos un usuario");
+        : res.status(404).json({ message: "El usuario buscado no existe" });
 }
 
 export const createUser = async (req, res) => {
