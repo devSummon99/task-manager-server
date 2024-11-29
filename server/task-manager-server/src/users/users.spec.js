@@ -1,7 +1,20 @@
 import app from "../../app.js";
 import request from "supertest";
 
-import generarPalabrasAleatorias from "../utils/tests-words.js";
+const generarPalabrasAleatorias = (cwords) => {
+    const words =[];
+    const characters  = 'abcdefghijklmnopqrstuvwxyz';
+    for (let i = 0; i < cwords; i++) {
+        let word  = '';
+        const lword = Math.floor(Math.random() * 10) + 3;
+        for (let j = 0; j < lword; j++) {
+            const ramdomI = Math.floor(Math.random() * characters.length);
+            word += characters[ramdomI];
+        }
+        words.push(word);
+    }
+    return words;
+}
 
 describe("GET /api-tasks/v1/users", () => {
 
